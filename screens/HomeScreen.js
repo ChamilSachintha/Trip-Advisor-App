@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, SafeAreaView } from 'react-native'
 import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 
@@ -13,9 +13,16 @@ const HomeScreen = () => {
   }, []);
 
   return (
-    <View>
-      <Text className="text-red-400">HomeScreen</Text>
-    </View>
+    <SafeAreaView className="bg-white flex-1 relative">
+      {/* 1st Section */}
+      <View className="flex-row px-6 mt-12 items-center space-x-2">
+        <View className="w-16 h-16 bg-black rounded-full items-center justify-center">
+          <Text className="text-[#40AB87] text-3xl font-semibold">Go</Text>
+        </View>
+
+        <Text>Travel</Text>
+      </View>
+    </SafeAreaView>
   )
 }
 
