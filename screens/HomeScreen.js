@@ -18,7 +18,7 @@ const HomeScreen = () => {
   return (
     <SafeAreaView className="bg-white flex-1 relative">
       {/* 1st Section */}
-      <View className="flex-row px-6 mt-5 items-center space-x-2">
+      <View className="flex-row px-6 mt-12 items-center space-x-2">
         <View className="w-16 h-16 bg-black rounded-full items-center justify-center">
           <Text className="text-[#00BCC9] text-3xl font-semibold">Go</Text>
         </View>
