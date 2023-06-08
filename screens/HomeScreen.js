@@ -3,6 +3,7 @@ import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { HeroImg } from '../assets';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import * as Animatable from 'react-native-animatable';
 
 const HomeScreen = () => {
 
@@ -38,7 +39,10 @@ const HomeScreen = () => {
 
       {/* Image container */}
       <View className="flex-1 relative items-center justify-center">
-        <Image source={HeroImg} 
+        <Animatable.Image
+        animation="fadeIn"
+        easing="ease-in-out"
+        source={HeroImg} 
         className="w-full h-full object-cover mt-8"/>
 
       <View className="absolute bottom-20 w-24 h-24 border-l-2 border-r-2 border-t-4 border-[#00BCC9] rounded-full items-center justify-center">
