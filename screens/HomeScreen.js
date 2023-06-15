@@ -46,11 +46,11 @@ const HomeScreen = () => {
         source={HeroImg} 
         className="w-full h-full object-cover mt-8"/>
 
-      <View className="absolute bottom-20 w-24 h-24 border-l-2 border-r-2 border-t-4 border-[#00BCC9] rounded-full items-center justify-center">
-      <TouchableOpacity
+<TouchableOpacity
         onPress={() => {
         // Handle onPress event
         }}
+        className="absolute bottom-20 w-24 h-24 border-l-2 border-r-2 border-t-4 border-[#00BCC9] rounded-full items-center justify-center"
       >
         <Animatable.View 
           animation={"pulse"} 
@@ -59,8 +59,7 @@ const HomeScreen = () => {
           className="w-20 h-20 items-center justify-center rounded-full bg-[#00BCC9]">
           <Text className="text-gray-50 text-[36px] font-semibold">Go</Text>
         </Animatable.View>
-        </TouchableOpacity>
-      </View>
+      </TouchableOpacity>
       </View>
     </SafeAreaView>
   )
