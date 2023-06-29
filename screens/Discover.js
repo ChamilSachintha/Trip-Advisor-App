@@ -3,6 +3,7 @@ import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Avatar } from "../assets";
+import SearchComponent from "../components/SearchComponent";
 
 const Discover = () => {
   const navigation = useNavigation();
@@ -27,6 +28,10 @@ const Discover = () => {
             className="w-full h-full rounded-md object-cover"
           />
         </View>
+      </View>
+
+      <View className="flex-row items-center bg-white mx-4 rounded-xl py-2 px-4 shadow-lg mt-4">
+        <SearchComponent />
       </View>
     </SafeAreaView>
   );
